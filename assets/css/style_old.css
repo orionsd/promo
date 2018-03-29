@@ -1,0 +1,331 @@
+@font-face {
+	font-family: 'Days';
+
+	src: 
+		 url('/assets/fonts/DAYS.woff') format('woff');
+}
+
+* {
+	margin 					: 0;
+	padding 				: 0;
+}
+
+html,
+body {
+    width 					: 99.5%;
+    height 					: 100%;
+    /*overflow-x 				: hidden;*/
+}
+
+p {
+    padding 				: 0 0.5em;
+    margin 					: 0;
+}
+
+hr {
+	width 					: 85%;
+	margin 					: 1em auto;
+	clear 					: both;
+	background-color 		: #138AC9;
+	background-color 		: rgb(16, 138, 201);
+}
+
+.content {
+    height 					: 100%;
+    width 					: 100%;
+}
+
+img {
+	display 				: block;
+	margin 					: 0 auto;
+}
+
+.cust_text {
+	text-align 				: center;
+	font-family 			: 'Days', 'Arial';
+	font-size 				: 1.5em;
+
+	color 					: #138AC9;
+	color 					: rgb(16, 138, 201);
+}
+
+.cust_subtext {
+	text-align 				: center;
+	font-family 			: 'Days', 'Arial';
+	font-size 				: .55em;
+
+	color 					: #CCCCCC;
+	color 					: rgb(204,204,204);
+}
+
+#content1 {
+	background-attachment 	: fixed;
+    background-image 		: url('/assets/img/land2018.jpg');
+    background-repeat 		: no-repeat;
+    /*background-size 		: auto 100%;*/
+    background-size 		: contain;
+   	/*background-position 	: 50% 35%;*/
+   	background-position 	: center;
+   	box-shadow 				: 0 0 35px rgba(0,0,0,0.5);
+}
+
+#content2 {
+    background 				: #FFFFFF url('/assets/img/block2.jpg') no-repeat;
+	background-size 		: 70% auto;
+	background-position 	: center;
+}
+
+img.how_text {
+	width 					: 20%;
+}
+
+img.wait_text {
+	margin-bottom: 3em;
+}
+
+div#content3 img.note {
+	/*width: 70%;*/
+	height: 85%;
+}
+ 
+.reg_but {
+	display 				: block;
+	width 					: 197px !important;
+	height 					: 32px !important;
+	background 				: url('/assets/img/reg_button.png') no-repeat !important;
+	background-size     	: contain !important;
+	background-position 	: center !important;
+	border              	: none !important;
+	outline 				: 0 !important;
+	cursor 					: pointer;
+}
+
+.detail_but {
+	display 				: block;
+	width 					: 197px !important;
+	height 					: 32px !important;
+	margin 					: .5 8em;
+	background 				: url('/assets/img/detail_button.png') no-repeat !important;
+	background-size     	: contain !important;
+	background-position 	: center !important;
+	border              	: none !important;
+	outline 				: 0 !important;
+	cursor 					: pointer;
+}
+
+#front_reg_but {
+	position 				: absolute;
+	width 					: 421px !important;
+	height 					: 69px !important;
+	bottom 					: 0;
+	margin 					: 1em 8em;
+}
+
+#bl2_reg_but {
+	float 					: right;
+	position 				: relative;
+	top 					: 85%;
+	margin 					: 1em 8em;
+}
+
+#bl3_reg_but {
+	/*float 					: right;*/
+	/*margin-right 			: 3em;*/
+}
+
+.div_text {
+	padding-right 			: 1.5em;
+	text-align 				: right;
+	font-size 				: .9em;
+	font-weight 			: bold;
+	color 					: #FF0033;
+}
+
+.card {
+	display 				: inline-block !important;
+	width 					: 14em !important;
+	margin 					: .4em 3.5em !important;
+	border 					: none;
+}
+
+.card-img-top {
+	width 					: 50%;
+}
+
+.card-body {
+	padding-left 			: 0;
+	padding-right 			: 0;
+}
+
+.bottom_row .card {
+	margin 					: .45em 4em !important;
+}
+
+.bottom_row .card .card-body p {
+	color: #138AC9;
+	color: rgb(16, 138, 201);
+}
+
+#reg_form *:not(button) {
+	width 					: 85%;
+	margin 					: 0 auto;
+}
+
+#reg_form input,
+#reg_form button {
+	margin-top 				: 1.5em !important;
+}
+
+#reg_form button {
+	display 				: block;
+	margin 					: 0 auto;
+	background-color 		: #138AC9;
+	background-color 		: rgb(16, 138, 201);
+}
+
+img#loader {
+	 display: none;
+	 width: 31px;
+	 height: 31px;
+}
+
+#res_info {
+	width 					: 85%;
+	margin 					: 0 auto;
+	text-align 				: center;
+}
+
+footer {
+	width 					: 85%;
+	margin 					: 0 auto;
+	margin-top 				: 4em;
+}
+
+footer table td {
+	padding 				: 1em !important;
+	background 				: #ebf5fe;
+	background 				: rgb(235,245,254);
+}
+
+footer li {
+	list-style-type 		: none;
+	font-size 				: .9em;
+}
+
+@media all and (max-width: 1445px) {
+	.card {
+		margin: .4em 4em !important;
+	}
+	.bottom_row .card {
+		margin: .45em 2.5em !important;
+	}
+}
+@media all and (max-width: 1280px) {
+	.card {
+		font-size: .9em;
+	}
+	
+}
+@media all and (max-width: 1000px) {
+	#front_reg_but {
+		display: none;
+	}
+	#content1 {
+		width: 100%;
+		height: 650px;
+		background-size: 100% 650px;
+		background-repeat: no-repeat;
+	}
+	.div_text {
+		font-size: 1.5em;
+	}
+	.card {
+		margin: .4em 1em !important;
+	}
+}
+@media all and (max-width: 750px) {
+	.content {
+		height: 650px;
+	}
+	#content1 {
+		height: 450px;
+		background-size: contain;
+	}
+	#content2 {
+		background-size: 70% 450px !important;
+	}
+	#content4 {
+		margin-top: 5.5em;
+	}
+	.div_text {
+		text-align: center;
+		font-size: 1.1em;
+	}
+	#bl2_reg_but,
+	#bl3_reg_but,
+	.detail_but {
+		margin: .5em auto !important;
+	}
+	.card {
+		width: 10em !important;
+		margin: .4em auto !important;
+	}
+	.bottom_row .card {
+		width: 8em !important;
+		margin: .45em auto !important;
+	}
+	img.reg_head {
+		width: 80% !important;
+	}
+	.note_hr {
+		display: none;
+	}
+}
+@media all and (max-width: 445px) {
+	.content {
+		height: 350px;
+	}
+	#content1 {
+		height: 270px;
+		background-size: 100%;
+		background-position: 30px 0;
+	}
+	#content2 {
+		background-size: 75% 250px !important;
+	}
+	div#content3 img.note {
+		width: 90%;
+		/*height: 70%;*/
+	}
+	.reg_but,
+	.detail_but {
+		width 					: 100px !important;
+		height 					: 16px !important;
+		margin 					: .5em auto !important;
+	}
+	.div_text {
+		text-align: center;
+		font-size: .7em;
+	}
+	.card {
+		width: 9em !important;
+		margin: .4em auto !important;
+		font-size: .65em;
+	}
+	.bottom_row .card {
+		width: 16.5em !important;
+		margin: .45em auto !important;
+	}
+	.cust_text {
+		font-size 				: 1em;
+	}
+	.cust_subtext {
+		font-size 				: .45em;
+	}
+	footer {
+		width: 100%;
+	}
+	footer li {
+		font-size: .65em;
+	}
+}
